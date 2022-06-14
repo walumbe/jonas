@@ -1,0 +1,22 @@
+{
+    "name": "walumbe/jonas",
+    "autoload": {
+        "psr-4": {
+            "Walumbe\\Jonas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jonathan Walumbe",
+            "email": "nathanwalumbe@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+          "app\\": "./"
+      }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
