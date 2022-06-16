@@ -11,6 +11,7 @@ Class Application
 {
     public static string $ROOT_DIR;
 
+    public string $layout = 'main';
     public string $userClass;
     public Router $router;
     public Request  $request;
@@ -45,7 +46,13 @@ Class Application
 
     public function run()
     {
-        echo $this->router->resolve();
+        try {
+            echo $this->router->resolve();
+        }catch (\Exception $e){
+            throw $this->router->renderView('_error', [
+                'exception' => $e
+            ]);
+        }
     }
 
     /**
