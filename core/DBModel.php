@@ -22,12 +22,16 @@ abstract class DBModel extends Model
             $statement->bindValue(":$attribute", $this->{$attribute});
         }
 
-        $statement->exec();
+//        echo "<pre>";
+//        var_dump($statement, $params, $attributes);
+//        echo "</pre>";
+//        Application::$app->database->pdo->exec($statement);
+        $statement->execute();
         return true;
     }
 
     public static function prepare($sql)
     {
-        return Application::$app->database->prepare($sql);
+       return Application::$app->database->pdo->prepare($sql);
     }
 }
