@@ -24,7 +24,7 @@ class AuthController extends Controller
 
             if($user->validate() && $user->save())
             {
-
+                Application::$app->session->setFlash('success', 'Welcome to jonas Framework!');
                 Application::$app->response->redirect('/');
 //                header('Location: /');
             }
