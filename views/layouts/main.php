@@ -2,6 +2,10 @@
 
 use app\core\Application;
 
+//echo "<pre>";
+//var_dump(Application::$app->user);
+//echo "</pre>";
+
 ?>
 
 <!doctype html>
@@ -36,14 +40,31 @@ use app\core\Application;
 <!--                <a class="nav-link" href="/about">About</a>-->
 <!--            </li>-->
         </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/login">Login</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/register">Register</a>
-            </li>
-        </ul>
+        <?php
+
+        if (Application::isGuest()): ?>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul>
+        <?php else: ?>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/profile">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/logout">
+                        Welcome <?php echo Application::$app->user->getDisplayName() ?> (Logout)
+                    </a>
+                </li>
+            </ul>
+        <?php endif; ?>
     </div>
   </div>
 </nav>
