@@ -24,6 +24,7 @@ Class Application
     public function __construct($rootPath, array $config)
     {
         $this->userClass = $config['userClass'];
+//        $this->userClass = $userClass;
         self::$ROOT_DIR = $rootPath;
         self::$app = $this;
         $this->request = new Request();
