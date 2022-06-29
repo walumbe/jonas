@@ -1,8 +1,11 @@
 <?php
 
-namespace app\core;
+namespace app\core\db;
 
 //object Relational Mapping
+
+use app\core\Application;
+use app\core\Model;
 
 abstract class DBModel extends Model
 {
