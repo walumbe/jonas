@@ -25,7 +25,7 @@ class View
         /**
          * @var Controller $controller
          */
-        if($controller)
+        if(Application::$app->controller)
         {
             $layout = Application::$app->layout;
         }
