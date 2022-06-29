@@ -19,6 +19,7 @@ Class Application
     public Session $session;
     public Database $database;
     public ?DBModel $user;
+    public View $view;
     public Controller $controller;
     public static Application $app;
     public function __construct($rootPath, array $config)
@@ -32,6 +33,7 @@ Class Application
         $this->session = new Session();
         $this->router = new Router($this->request, $this->response);
 
+        $this->view = new View();
         $this->database = new Database($config['database']);
 
         $primaryValue = $this->session->get('user');
@@ -50,7 +52,8 @@ Class Application
         try {
             echo $this->router->resolve();
         }catch (\Exception $e){
-            throw $this->router->renderView('_error', [
+            $this->response->getStatusCode($e->getCode());
+            echo $this->router->renderView('_error', [
                 'exception' => $e
             ]);
         }
