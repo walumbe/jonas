@@ -2,9 +2,7 @@
 
 use app\core\Application;
 
-//echo "<pre>";
-//var_dump(Application::$app->user);
-//echo "</pre>";
+/** @var $this \app\core\View */
 
 ?>
 <!doctype html>
@@ -18,8 +16,8 @@ use app\core\Application;
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <title><?php echo $this->title ?></title>
+<!--    <link rel="stylesheet" href="/css/bootstrap.css">-->
+    <title><?php echo $this->title; ?></title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

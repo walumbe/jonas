@@ -8,12 +8,15 @@ class View
 
     public function renderView($view, $params = [])
     {
-        return Application::$app->view->renderView($view, $params);
+        $viewContent = $this->renderOnlyView($view, $params);
+        $layoutContent = $this->layoutContent();
+        return str_replace('{{content}}', $viewContent, $layoutContent);
     }
 
     public function renderContent($viewContent)
     {
-        return Application::$app->view->renderContent($viewContent);
+        $layoutContent = $this->layoutContent();
+        return str_replace('{{content}}', $viewContent, $layoutContent);
     }
 
     protected function layoutContent()

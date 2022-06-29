@@ -1,15 +1,13 @@
 <?php
-/**
- * @var $model \app\models\User
- */
+/** @var $this \app\core\View */
+$this->title = 'Register';
+/** @var $model \app\models\User */
 ?>
 <h1>Create an Account</h1>
 <?php $form = \app\core\form\Form::begin('', 'post'); ?>
     <div class="row">
         <div class="col">
-            <?php if (isset($model)) {
-                echo $form->field($model, 'firstname');
-            } ?>
+            <?php echo $form->field($model, 'firstname'); ?>
         </div>
         <div class="col">
             <?php echo $form->field($model, 'lastname') ; ?>

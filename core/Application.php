@@ -53,7 +53,7 @@ Class Application
             echo $this->router->resolve();
         }catch (\Exception $e){
             $this->response->getStatusCode($e->getCode());
-            echo $this->router->renderView('_error', [
+            echo $this->view->renderView('_error', [
                 'exception' => $e
             ]);
         }
