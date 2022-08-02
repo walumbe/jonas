@@ -2,9 +2,9 @@
 
 namespace app\models;
 
-use app\core\DBModel;
-use app\core\Model;
-use app\core\UserModel;
+use walumbe\phpmvc\DBModel;
+use walumbe\phpmvc\Model;
+use walumbe\phpmvc\UserModel;
 
 class User extends  UserModel
 {

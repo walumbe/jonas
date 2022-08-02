@@ -1,6 +1,6 @@
 <?php
 
-/** @var $this \app\core\View*/
+/** @var $this \walumbe\phpmvc\View*/
 $this->title = 'Profile';
 ?>
 <h1>Profile</h1>

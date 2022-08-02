@@ -4,7 +4,7 @@ class m0001_initial
 {
     public function up()
     {
-        $database = \app\core\Application::$app->database;
+        $database = \walumbe\phpmvc\Application::$app->database;
         $SQL = "CREATE TABLE users (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 email VARCHAR(255) NOT NULL,
@@ -17,7 +17,7 @@ class m0001_initial
 
     public function down()
     {
-        $database = \app\core\Application::$app->database;
+        $database = \walumbe\phpmvc\Application::$app->database;
         $SQL = "DROP TABLE users";
         $database->pdo->exec($SQL);
     }

@@ -1,8 +1,8 @@
 <?php
 
-use app\core\Application;
+use walumbe\phpmvc\Application;
 
-/** @var $this \app\core\View */
+/** @var $this \walumbe\phpmvc\View */
 
 ?>
 <!doctype html>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be7f8b47e902f04f65903d9b28e962a7",
+    "content-hash": "36d20a39fb5435e50226bfcb3017f52c",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -466,12 +466,48 @@
                 }
             ],
             "time": "2021-12-12T23:22:04+00:00"
+        },
+        {
+            "name": "walumbe/mvc-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walumbe/walumbe-mvc-core.git",
+                "reference": "494aaf10f0b32fe31746e5247497462e95712fe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walumbe/walumbe-mvc-core/zipball/494aaf10f0b32fe31746e5247497462e95712fe6",
+                "reference": "494aaf10f0b32fe31746e5247497462e95712fe6",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "walumbe\\phpmvc\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jonathan Walumbe",
+                    "email": "nathanwalumbe@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/walumbe/walumbe-mvc-core/issues",
+                "source": "https://github.com/walumbe/walumbe-mvc-core/tree/v1.0.5"
+            },
+            "time": "2022-08-02T04:49:15+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "walumbe/mvc-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

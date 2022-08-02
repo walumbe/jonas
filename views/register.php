@@ -1,10 +1,10 @@
 <?php
-/** @var $this \app\core\View */
+/** @var $this \walumbe\phpmvc\View */
 $this->title = 'Register';
 /** @var $model \app\models\User */
 ?>
 <h1>Create an Account</h1>
-<?php $form = \app\core\form\Form::begin('', 'post'); ?>
+<?php $form = \walumbe\phpmvc\form\Form::begin('', 'post'); ?>
     <div class="row">
         <div class="col">
             <?php echo $form->field($model, 'firstname'); ?>
@@ -18,4 +18,4 @@ $this->title = 'Register';
     <?php echo $form->field($model, 'confirmPassword')->passwordField(); ?>
     <button class="btn btn-success">Submit</button>
 
-<?php echo \app\core\form\Form::end() ?>
+<?php echo \walumbe\phpmvc\form\Form::end() ?>

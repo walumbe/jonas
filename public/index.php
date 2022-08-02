@@ -2,7 +2,7 @@
 
 /** user: walumbe */
 use app\controllers\SiteController;
-use app\core\Application;
+use walumbe\phpmvc\Application;
 use app\controllers\AuthController;
 
 require_once __DIR__.'/../vendor/autoload.php';

@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use walumbe\phpmvc\Application;
+use walumbe\phpmvc\Model;
 
 /**
  * @author Jonathan Walumbe <nathanwalumbe@gmail.com>
