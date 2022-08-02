@@ -13,20 +13,22 @@ $this->title = 'Home';
         <div class="body-content">
             <div class="row">
                 <div class="col-lg-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <p>Jonas Framework is a fast, secure, and efficient PHP framework.
+                        Flexible yet pragmatic. Works right out of the box. Has reasonable defaults.
+                        Write more code in less time with simple, yet powerful APIs and code generation.
                     </p>
                     <p><a class="btn btn-outline-secondary" href="https://github.com/walumbe/jonas">jonas Documentation &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <p>Jonas framework is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Laravel's built-in support for fast, distributed cache systems like Redis, horizontal scaling with Laravel is a breeze. In fact, jonas applications will easily scaled
+                        to handle hundreds of millions of requests per month.
                     </p>
                     <p><a class="btn btn-outline-secondary" href="https://github.com/walumbe/jonas">jonas Documentation &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <p> Jonas is a generic Web programming framework,
+                        meaning that it can be used for developing all kinds of Web applications using PHP. Because of its component-based architecture and sophisticated caching support, it is especially suitable for developing large-scale applications such as portals, forums,
+                        content management systems (CMS), e-commerce projects, RESTful Web services, and so on.
                     </p>
                     <p><a class="btn btn-outline-secondary" href="https://github.com/walumbe/jonas">jonas Documentation &raquo;</a></p>
                 </div>
