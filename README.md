@@ -22,7 +22,7 @@ Minimalistic custom framework created for educational purposes.
 
 ------
 ## Installation using docker
-Make sure you have docker installed. To see how you can install docker on Windows [click here](https://youtu.be/2ezNqqaSjq8). <br>
+Make sure you have docker installed. To see how you can install docker on Windows [click here](https://docs.docker.com/get-started/). <br>
 Make sure `docker` and `docker-compose` commands are available in command line.
 
 1. Clone the project using git
